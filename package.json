@@ -6,8 +6,8 @@
   "author": "Peter Si <appsdevstudios@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "doc:dev": "vuepress dev docs",
-    "doc:build": "vuepress build docs"
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
   },
   "devDependencies": {
     "vuepress": "^2.0.0-beta.61"
