@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-8daa1a0e","path":"/","title":"Studios","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":1679993016000,"contributors":[{"name":"Ping Si (siping)","email":"siping@cisco.com","commits":1}]},"filePathRelative":"README.md"}');export{t as data};

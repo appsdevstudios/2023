@@ -1,0 +1,1 @@
+import{_ as t,p as o,q as c,R as e,t as s}from"./framework-5866ffd3.js";const a={},r=e("h3",{id:"socket-io",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#socket-io","aria-hidden":"true"},"#"),s(" Socket.io")],-1),_=[r];function i(n,d){return o(),c("div",null,_)}const l=t(a,[["render",i],["__file","socket.io.html.vue"]]);export{l as default};

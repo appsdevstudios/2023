@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="generator" content="VuePress 2.0.0-beta.61">
+    <style>
+      :root {
+        --c-bg: #fff;
+      }
+      html.dark {
+        --c-bg: #22272e;
+      }
+      html, body {
+        background-color: var(--c-bg);
+      }
+    </style>
+    <script>
+      const userMode = localStorage.getItem('vuepress-color-scheme');
+			const systemDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+			if (userMode === 'dark' || (userMode !== 'light' && systemDarkMode)) {
+				document.documentElement.classList.toggle('dark', true);
+			}
+    </script>
+    <title>Nginx | Studios</title><meta name="description" content="">
+    <link rel="preload" href="/2023/assets/style-af81738b.css" as="style"><link rel="stylesheet" href="/2023/assets/style-af81738b.css">
+    <link rel="modulepreload" href="/2023/assets/app-8d1f7407.js"><link rel="modulepreload" href="/2023/assets/framework-5866ffd3.js"><link rel="modulepreload" href="/2023/assets/nginx.html-f723be8f.js"><link rel="modulepreload" href="/2023/assets/nginx.html-226d46f4.js"><link rel="prefetch" href="/2023/assets/index.html-7f7a0c3f.js" as="script"><link rel="prefetch" href="/2023/assets/Reference.html-62bf0884.js" as="script"><link rel="prefetch" href="/2023/assets/express.js.html-57e95e66.js" as="script"><link rel="prefetch" href="/2023/assets/koa.js.html-139b5782.js" as="script"><link rel="prefetch" href="/2023/assets/next.js.html-5c76bb25.js" as="script"><link rel="prefetch" href="/2023/assets/node.js.html-9a866051.js" as="script"><link rel="prefetch" href="/2023/assets/socket.io.html-1f3cfc7f.js" as="script"><link rel="prefetch" href="/2023/assets/cbplayer.html-9706f7fe.js" as="script"><link rel="prefetch" href="/2023/assets/clappr.html-aaf6c260.js" as="script"><link rel="prefetch" href="/2023/assets/dplayer.html-c965bdc3.js" as="script"><link rel="prefetch" href="/2023/assets/plyr.html-1e89d56a.js" as="script"><link rel="prefetch" href="/2023/assets/video.js.html-0bf587fd.js" as="script"><link rel="prefetch" href="/2023/assets/xgplayer.html-6f0838b2.js" as="script"><link rel="prefetch" href="/2023/assets/hls.js.html-6ae3bfa5.js" as="script"><link rel="prefetch" href="/2023/assets/playwright.html-baa3b880.js" as="script"><link rel="prefetch" href="/2023/assets/puppeteer.html-700e8b32.js" as="script"><link rel="prefetch" href="/2023/assets/testCafe.html-88b7ea79.js" as="script"><link rel="prefetch" href="/2023/assets/docker.html-1a1f0c5f.js" as="script"><link rel="prefetch" href="/2023/assets/elastic.html-a21aaf45.js" as="script"><link rel="prefetch" href="/2023/assets/grafana.html-ada9ede2.js" as="script"><link rel="prefetch" href="/2023/assets/jenkins.html-7fa480b2.js" as="script"><link rel="prefetch" href="/2023/assets/redis.html-2e066c5a.js" as="script"><link rel="prefetch" href="/2023/assets/ts.html-7a3e86a4.js" as="script"><link rel="prefetch" href="/2023/assets/webAssembly.html-e951b9a5.js" as="script"><link rel="prefetch" href="/2023/assets/webAssemblyStepByStep.html-fb9c99b9.js" as="script"><link rel="prefetch" href="/2023/assets/webPlayerKernel.html-f0775f0d.js" as="script"><link rel="prefetch" href="/2023/assets/404.html-60b35caa.js" as="script"><link rel="prefetch" href="/2023/assets/index.html-9285cfdf.js" as="script"><link rel="prefetch" href="/2023/assets/Reference.html-e815d83b.js" as="script"><link rel="prefetch" href="/2023/assets/express.js.html-21fb61b3.js" as="script"><link rel="prefetch" href="/2023/assets/koa.js.html-fcee0a7c.js" as="script"><link rel="prefetch" href="/2023/assets/next.js.html-a35fdb2b.js" as="script"><link rel="prefetch" href="/2023/assets/node.js.html-63e986b8.js" as="script"><link rel="prefetch" href="/2023/assets/socket.io.html-554ed8f3.js" as="script"><link rel="prefetch" href="/2023/assets/cbplayer.html-607c8d40.js" as="script"><link rel="prefetch" href="/2023/assets/clappr.html-44b7cafb.js" as="script"><link rel="prefetch" href="/2023/assets/dplayer.html-89edbe09.js" as="script"><link rel="prefetch" href="/2023/assets/plyr.html-dbcaa34c.js" as="script"><link rel="prefetch" href="/2023/assets/video.js.html-45836c46.js" as="script"><link rel="prefetch" href="/2023/assets/xgplayer.html-82cefeff.js" as="script"><link rel="prefetch" href="/2023/assets/hls.js.html-c6f46c8b.js" as="script"><link rel="prefetch" href="/2023/assets/playwright.html-66476130.js" as="script"><link rel="prefetch" href="/2023/assets/puppeteer.html-65f9d9ed.js" as="script"><link rel="prefetch" href="/2023/assets/testCafe.html-71bdf01f.js" as="script"><link rel="prefetch" href="/2023/assets/docker.html-5300e7ed.js" as="script"><link rel="prefetch" href="/2023/assets/elastic.html-9025cfbb.js" as="script"><link rel="prefetch" href="/2023/assets/grafana.html-81c7bec7.js" as="script"><link rel="prefetch" href="/2023/assets/jenkins.html-905e298a.js" as="script"><link rel="prefetch" href="/2023/assets/redis.html-2f01ca07.js" as="script"><link rel="prefetch" href="/2023/assets/ts.html-164efd40.js" as="script"><link rel="prefetch" href="/2023/assets/webAssembly.html-85f18239.js" as="script"><link rel="prefetch" href="/2023/assets/webAssemblyStepByStep.html-31736f20.js" as="script"><link rel="prefetch" href="/2023/assets/webPlayerKernel.html-adf32b57.js" as="script"><link rel="prefetch" href="/2023/assets/404.html-87d54bd8.js" as="script">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="theme-container"><!--[--><header class="navbar"><div class="toggle-sidebar-button" title="toggle sidebar" aria-expanded="false" role="button" tabindex="0"><div class="icon" aria-hidden="true"><span></span><span></span><span></span></div></div><span><a href="/2023/" class=""><!----><span class="site-name">Studios</span></a></span><div class="navbar-items-wrapper" style=""><!--[--><!--]--><!----><!--[--><!--]--><button class="toggle-color-mode-button" title="toggle color mode"><svg style="" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M16 12.005a4 4 0 1 1-4 4a4.005 4.005 0 0 1 4-4m0-2a6 6 0 1 0 6 6a6 6 0 0 0-6-6z" fill="currentColor"></path><path d="M5.394 6.813l1.414-1.415l3.506 3.506L8.9 10.318z" fill="currentColor"></path><path d="M2 15.005h5v2H2z" fill="currentColor"></path><path d="M5.394 25.197L8.9 21.691l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 25.005h2v5h-2z" fill="currentColor"></path><path d="M21.687 23.106l1.414-1.415l3.506 3.506l-1.414 1.414z" fill="currentColor"></path><path d="M25 15.005h5v2h-5z" fill="currentColor"></path><path d="M21.687 8.904l3.506-3.506l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 2.005h2v5h-2z" fill="currentColor"></path></svg><svg style="display:none;" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M13.502 5.414a15.075 15.075 0 0 0 11.594 18.194a11.113 11.113 0 0 1-7.975 3.39c-.138 0-.278.005-.418 0a11.094 11.094 0 0 1-3.2-21.584M14.98 3a1.002 1.002 0 0 0-.175.016a13.096 13.096 0 0 0 1.825 25.981c.164.006.328 0 .49 0a13.072 13.072 0 0 0 10.703-5.555a1.01 1.01 0 0 0-.783-1.565A13.08 13.08 0 0 1 15.89 4.38A1.015 1.015 0 0 0 14.98 3z" fill="currentColor"></path></svg></button><!----></div></header><!--]--><div class="sidebar-mask"></div><!--[--><aside class="sidebar"><!----><!--[--><!--]--><ul class="sidebar-items"><!--[--><li><p tabindex="0" class="sidebar-item sidebar-heading">WebAssembly + FFmpeg <!----></p><ul style="" class="sidebar-item-children"><!--[--><li><a href="/2023/webAssembly/webAssembly.html" class="sidebar-item" aria-label="WebAssembly"><!--[--><!--]--> WebAssembly <!--[--><!--]--></a><!----></li><li><a href="/2023/webAssembly/webAssemblyStepByStep.html" class="sidebar-item" aria-label="WebAssembly step-by-step"><!--[--><!--]--> WebAssembly step-by-step <!--[--><!--]--></a><!----></li><li><a href="/2023/webAssembly/webPlayerKernel.html" class="sidebar-item" aria-label="Web Player Kernel"><!--[--><!--]--> Web Player Kernel <!--[--><!--]--></a><!----></li><li><a href="/2023/webAssembly/ts.html" class="sidebar-item" aria-label="TS (Transport Stream)"><!--[--><!--]--> TS (Transport Stream) <!--[--><!--]--></a><!----></li><!--]--></ul></li><li><p tabindex="0" class="sidebar-item sidebar-heading collapsible">Node <span class="right arrow"></span></p><ul style="display:none;" class="sidebar-item-children"><!--[--><li><a href="/2023/node/node.js.md" class="sidebar-item" aria-label="Node.js"><!--[--><!--]--> Node.js <!--[--><!--]--></a><!----></li><li><a href="/2023/node/express.js.md" class="sidebar-item" aria-label="Express.js"><!--[--><!--]--> Express.js <!--[--><!--]--></a><!----></li><li><a href="/2023/node/koa.js.md" class="sidebar-item" aria-label="Koa.js"><!--[--><!--]--> Koa.js <!--[--><!--]--></a><!----></li><li><a href="/2023/node/next.js.md" class="sidebar-item" aria-label="Next.js"><!--[--><!--]--> Next.js <!--[--><!--]--></a><!----></li><li><a href="/2023/node/socket.io.md" class="sidebar-item" aria-label="Socket.io"><!--[--><!--]--> Socket.io <!--[--><!--]--></a><!----></li><!--]--></ul></li><li><p tabindex="0" class="sidebar-item sidebar-heading collapsible">HLS <span class="right arrow"></span></p><ul style="display:none;" class="sidebar-item-children"><!--[--><li><a href="/2023/hls/hls.js.md" class="sidebar-item" aria-label="Hls.js"><!--[--><!--]--> Hls.js <!--[--><!--]--></a><!----></li><!--]--></ul></li><li><p tabindex="0" class="sidebar-item sidebar-heading collapsible">Player <span class="right arrow"></span></p><ul style="display:none;" class="sidebar-item-children"><!--[--><li><a href="/2023/player/video.js.md" class="sidebar-item" aria-label="Video.js"><!--[--><!--]--> Video.js <!--[--><!--]--></a><!----></li><li><a href="/2023/player/xgplayer.md" class="sidebar-item" aria-label="Xgplayer"><!--[--><!--]--> Xgplayer <!--[--><!--]--></a><!----></li><li><a href="/2023/player/plyr.md" class="sidebar-item" aria-label="Plyr"><!--[--><!--]--> Plyr <!--[--><!--]--></a><!----></li><li><a href="/2023/player/clappr.md" class="sidebar-item" aria-label="Clappr"><!--[--><!--]--> Clappr <!--[--><!--]--></a><!----></li><li><a href="/2023/player/dplayer.md" class="sidebar-item" aria-label="DPlayer"><!--[--><!--]--> DPlayer <!--[--><!--]--></a><!----></li><li><a href="/2023/player/cbplayer.md" class="sidebar-item" aria-label="CBPlayer"><!--[--><!--]--> CBPlayer <!--[--><!--]--></a><!----></li><!--]--></ul></li><li><p tabindex="0" class="sidebar-item sidebar-heading collapsible">Testing <span class="right arrow"></span></p><ul style="display:none;" class="sidebar-item-children"><!--[--><li><a href="/2023/testing/playwright.md" class="sidebar-item" aria-label="Playwright"><!--[--><!--]--> Playwright <!--[--><!--]--></a><!----></li><li><a href="/2023/testing/puppeteer.md" class="sidebar-item" aria-label="Puppeteer"><!--[--><!--]--> Puppeteer <!--[--><!--]--></a><!----></li><li><a href="/2023/testing/testCafe.md" class="sidebar-item" aria-label="TestCafe"><!--[--><!--]--> TestCafe <!--[--><!--]--></a><!----></li><!--]--></ul></li><li><p tabindex="0" class="sidebar-item sidebar-heading active collapsible">DevOps <span class="down arrow"></span></p><ul style="" class="sidebar-item-children"><!--[--><li><a href="/2023/devops/nginx.md" class="sidebar-item active" aria-label="Nginx"><!--[--><!--]--> Nginx <!--[--><!--]--></a><!----></li><li><a href="/2023/devops/docker.md" class="sidebar-item" aria-label="Docker"><!--[--><!--]--> Docker <!--[--><!--]--></a><!----></li><li><a href="/2023/devops/redis.md" class="sidebar-item" aria-label="Redis"><!--[--><!--]--> Redis <!--[--><!--]--></a><!----></li><li><a href="/2023/devops/elastic.md" class="sidebar-item" aria-label="Elastic"><!--[--><!--]--> Elastic <!--[--><!--]--></a><!----></li><li><a href="/2023/devops/grafana.md" class="sidebar-item" aria-label="Grafana"><!--[--><!--]--> Grafana <!--[--><!--]--></a><!----></li><li><a href="/2023/devops/jenkins.md" class="sidebar-item" aria-label="Jenkins"><!--[--><!--]--> Jenkins <!--[--><!--]--></a><!----></li><!--]--></ul></li><li><a href="/2023/Reference.html" class="sidebar-item sidebar-heading" aria-label="Reference"><!--[--><!--]--> Reference <!--[--><!--]--></a><!----></li><!--]--></ul><!--[--><!--]--></aside><!--]--><!--[--><main class="page"><!--[--><!--]--><div class="theme-default-content"><!--[--><!--]--><div><h1 id="nginx" tabindex="-1"><a class="header-anchor" href="#nginx" aria-hidden="true">#</a> Nginx</h1><p><strong>Nginx</strong> (pronounced &quot;engine-x&quot;) is a free, open-source web server software that is known for its high performance, stability, and scalability. It is often used as a reverse proxy server or load balancer to distribute incoming web traffic across multiple servers, and is also commonly used as a front-end proxy for web applications.</p><p><strong>Nginx</strong> was first released in 2004 and has since become a popular alternative to other web servers such as Apache. It is designed to handle a large number of concurrent connections and is highly configurable, making it a popular choice for high-traffic websites and web applications.</p><p><strong>Nginx</strong> supports various protocols, including HTTP, HTTPS, SMTP, POP3, and IMAP, and can be used as a reverse proxy for other web servers, such as Apache or Tomcat. It also has a modular architecture, which allows developers to add custom functionality to the server by creating modules.</p><p>Overall, <strong>Nginx</strong> is a powerful and flexible web server that is widely used in the industry due to its high performance, stability, and versatility.</p><h2 id="how-to-download-it" tabindex="-1"><a class="header-anchor" href="#how-to-download-it" aria-hidden="true">#</a> How to Download It?</h2><p>To download and install Nginx on a Mac, you can follow these general steps:</p><div class="language-bash" data-ext="sh"><pre class="language-bash"><code>brew <span class="token function">install</span> nginx
+</code></pre></div><h2 id="commands" tabindex="-1"><a class="header-anchor" href="#commands" aria-hidden="true">#</a> Commands</h2><p><strong>Nginx</strong> provides a number of command-line tools that you can use to manage and control the server. Here are some of the most commonly used <strong>Nginx</strong> commands:</p><h4 id="start-the-nginx-server" tabindex="-1"><a class="header-anchor" href="#start-the-nginx-server" aria-hidden="true">#</a> START <em><strong>the Nginx server</strong></em></h4><p>If you&#39;ve installed Nginx from a package manager, it should start automatically when your system boots up. You can use this command to start Nginx manually or to restart it after making configuration changes.</p><div class="language-bash" data-ext="sh"><pre class="language-bash"><code>nginx
+</code></pre></div><h4 id="stop-the-nginx-server" tabindex="-1"><a class="header-anchor" href="#stop-the-nginx-server" aria-hidden="true">#</a> STOP <em><strong>the Nginx server</strong></em></h4><p>It sends a stop signal to the master process, which causes it to gracefully shut down worker processes and close all connections.</p><div class="language-bash" data-ext="sh"><pre class="language-bash"><code>nginx <span class="token parameter variable">-s</span> stop
+</code></pre></div><h4 id="quit-the-nginx-server" tabindex="-1"><a class="header-anchor" href="#quit-the-nginx-server" aria-hidden="true">#</a> QUIT <em><strong>the Nginx server</strong></em></h4><p>It sends a quit signal to the master process, which causes it to gracefully shut down worker processes and exit.</p><div class="language-bash" data-ext="sh"><pre class="language-bash"><code>nginx <span class="token parameter variable">-s</span> quit
+</code></pre></div><h4 id="reload-the-nginx-server" tabindex="-1"><a class="header-anchor" href="#reload-the-nginx-server" aria-hidden="true">#</a> RELOAD <em><strong>the Nginx server</strong></em></h4><p>It sends a HUP signal to the master process, which causes it to reload the configuration and gracefully restart worker processes.</p><div class="language-bash" data-ext="sh"><pre class="language-bash"><code>nginx <span class="token parameter variable">-s</span> reload
+</code></pre></div><h4 id="test-the-nginx-configuration" tabindex="-1"><a class="header-anchor" href="#test-the-nginx-configuration" aria-hidden="true">#</a> TEST <em><strong>the Nginx configuration</strong></em></h4><p>It checks the syntax of the configuration file and reports any errors or warnings. This can be useful for verifying that your configuration changes are valid before reloading Nginx.</p><div class="language-bash" data-ext="sh"><pre class="language-bash"><code>nginx <span class="token parameter variable">-t</span>
+</code></pre></div><h4 id="display-the-nginx-version-and-compile-time-options" tabindex="-1"><a class="header-anchor" href="#display-the-nginx-version-and-compile-time-options" aria-hidden="true">#</a> DISPLAY <em><strong>the Nginx version and</strong></em> COMPILE-TIME <em><strong>options</strong></em></h4><p>It can be useful for checking which modules are installed and enabled in your Nginx installation.</p><div class="language-bash" data-ext="sh"><pre class="language-bash"><code>nginx <span class="token parameter variable">-V</span>
+</code></pre></div><h4 id="displays-help-information" tabindex="-1"><a class="header-anchor" href="#displays-help-information" aria-hidden="true">#</a> Displays <em><strong>help information</strong></em></h4><p>displays help information for the Nginx command-line options.</p><div class="language-bash" data-ext="sh"><pre class="language-bash"><code>nginx <span class="token parameter variable">-h</span>
+</code></pre></div><h2 id="configurations" tabindex="-1"><a class="header-anchor" href="#configurations" aria-hidden="true">#</a> Configurations</h2><p><strong>Nginx</strong> configuration involves setting up various directives and parameters that define how the server should operate. The configuration is typically stored in a text file called nginx.conf, which is located in the /etc/nginx directory on Unix-based systems.</p><div class="language-bash" data-ext="sh"><pre class="language-bash"><code>/usr/local/etc/nginx/nginx.conf
+</code></pre></div><p><strong>nginx.conf</strong> is the main configuration file for the Nginx web server. It contains directives that define how the server should handle incoming requests, where to find resources, how to log activity, and other settings. Here are some common sections and directives you might find in an nginx.conf file:</p><h4 id="http-section" tabindex="-1"><a class="header-anchor" href="#http-section" aria-hidden="true">#</a> HTTP section</h4><p>This section contains the main configuration for the HTTP server. It includes directives for server-wide settings such as worker processes, error logging, and default MIME types.</p><h4 id="server-section" tabindex="-1"><a class="header-anchor" href="#server-section" aria-hidden="true">#</a> SERVER section</h4><p>This section defines how the server should handle requests for a specific domain or IP address. It includes directives for SSL certificates, proxy settings, and location blocks.</p><h4 id="location-directive" tabindex="-1"><a class="header-anchor" href="#location-directive" aria-hidden="true">#</a> LOCATION directive</h4><p>This directive specifies how the server should handle requests for a specific URL path. It can include directives for caching, proxying, rewriting URLs, and more.</p><h4 id="upstream-directive" tabindex="-1"><a class="header-anchor" href="#upstream-directive" aria-hidden="true">#</a> UPSTREAM directive</h4><p>This directive defines a group of servers that can handle requests for a specific service or application. It can include directives for load balancing, health checks, and failover.</p><h4 id="worker-processes" tabindex="-1"><a class="header-anchor" href="#worker-processes" aria-hidden="true">#</a> WORKER PROCESSES</h4><p>worker_processes, which specifies how many worker processes the server should use.</p><h4 id="logs" tabindex="-1"><a class="header-anchor" href="#logs" aria-hidden="true">#</a> LOGS</h4><p>access_log and error_log, which control logging behavior.</p><h4 id="example" tabindex="-1"><a class="header-anchor" href="#example" aria-hidden="true">#</a> EXAMPLE</h4><div class="custom-container tip"><p class="custom-container-title">TIP</p><p>An example of a basic nginx.conf file that you can use as a reference:</p></div><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token comment">#user  nobody;</span>
+worker_processes  <span class="token number">1</span><span class="token punctuation">;</span>
+
+<span class="token comment">#error_log  logs/error.log;</span>
+<span class="token comment">#error_log  logs/error.log  notice;</span>
+<span class="token comment">#error_log  logs/error.log  info;</span>
+
+<span class="token comment">#pid        logs/nginx.pid;</span>
+
+events <span class="token punctuation">{</span>
+    worker_connections  <span class="token number">1024</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+http <span class="token punctuation">{</span>
+    include       mime.types<span class="token punctuation">;</span>
+    default_type  application/octet-stream<span class="token punctuation">;</span>
+
+    <span class="token comment">#log_format  main  &#39;$remote_addr - $remote_user [$time_local] &quot;$request&quot; &#39;</span>
+    <span class="token comment">#                  &#39;$status $body_bytes_sent &quot;$http_referer&quot; &#39;</span>
+    <span class="token comment">#                  &#39;&quot;$http_user_agent&quot; &quot;$http_x_forwarded_for&quot;&#39;;</span>
+
+    <span class="token comment">#access_log  logs/access.log  main;</span>
+
+    sendfile        on<span class="token punctuation">;</span>
+    <span class="token comment">#tcp_nopush     on;</span>
+
+    <span class="token comment">#keepalive_timeout  0;</span>
+    keepalive_timeout  <span class="token number">65</span><span class="token punctuation">;</span>
+
+    <span class="token comment">#gzip  on;</span>
+
+    server <span class="token punctuation">{</span>
+        listen       <span class="token number">8080</span><span class="token punctuation">;</span>
+        server_name  localhost<span class="token punctuation">;</span>
+
+        <span class="token comment">#charset koi8-r;</span>
+
+        <span class="token comment">#access_log  logs/host.access.log  main;</span>
+
+        <span class="token comment"># location / {</span>
+        <span class="token comment">#     root   html;</span>
+        <span class="token comment">#     index  index.html index.htm;</span>
+        <span class="token comment"># }</span>
+
+        location / <span class="token punctuation">{</span>
+            proxy_pass http://localhost:8001<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        location /api/ <span class="token punctuation">{</span>
+            proxy_pass http://localhost:8000<span class="token punctuation">;</span>
+            proxy_set_header Host <span class="token variable">$host</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token comment">#error_page  404              /404.html;</span>
+
+        <span class="token comment"># redirect server error pages to the static page /50x.html</span>
+        <span class="token comment">#</span>
+        error_page   <span class="token number">500</span> <span class="token number">502</span> <span class="token number">503</span> <span class="token number">504</span>  /50x.html<span class="token punctuation">;</span>
+        location <span class="token operator">=</span> /50x.html <span class="token punctuation">{</span>
+            root   html<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token comment"># proxy the PHP scripts to Apache listening on 127.0.0.1:80</span>
+        <span class="token comment">#</span>
+        <span class="token comment">#location ~ \.php$ {</span>
+        <span class="token comment">#    proxy_pass   http://127.0.0.1;</span>
+        <span class="token comment">#}</span>
+
+        <span class="token comment"># pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000</span>
+        <span class="token comment">#</span>
+        <span class="token comment">#location ~ \.php$ {</span>
+        <span class="token comment">#    root           html;</span>
+        <span class="token comment">#    fastcgi_pass   127.0.0.1:9000;</span>
+        <span class="token comment">#    fastcgi_index  index.php;</span>
+        <span class="token comment">#    fastcgi_param  SCRIPT_FILENAME  /scripts$fastcgi_script_name;</span>
+        <span class="token comment">#    include        fastcgi_params;</span>
+        <span class="token comment">#}</span>
+
+        <span class="token comment"># deny access to .htaccess files, if Apache&#39;s document root</span>
+        <span class="token comment"># concurs with nginx&#39;s one</span>
+        <span class="token comment">#</span>
+        <span class="token comment">#location ~ /\.ht {</span>
+        <span class="token comment">#    deny  all;</span>
+        <span class="token comment">#}</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment"># another virtual host using mix of IP-, name-, and port-based configuration</span>
+    <span class="token comment">#</span>
+    <span class="token comment">#server {</span>
+    <span class="token comment">#    listen       8000;</span>
+    <span class="token comment">#    listen       somename:8080;</span>
+    <span class="token comment">#    server_name  somename  alias  another.alias;</span>
+
+    <span class="token comment">#    location / {</span>
+    <span class="token comment">#        root   html;</span>
+    <span class="token comment">#        index  index.html index.htm;</span>
+    <span class="token comment">#    }</span>
+    <span class="token comment">#}</span>
+
+    <span class="token comment"># HTTPS server</span>
+    <span class="token comment">#</span>
+    <span class="token comment">#server {</span>
+    <span class="token comment">#    listen       443 ssl;</span>
+    <span class="token comment">#    server_name  localhost;</span>
+
+    <span class="token comment">#    ssl_certificate      cert.pem;</span>
+    <span class="token comment">#    ssl_certificate_key  cert.key;</span>
+
+    <span class="token comment">#    ssl_session_cache    shared:SSL:1m;</span>
+    <span class="token comment">#    ssl_session_timeout  5m;</span>
+
+    <span class="token comment">#    ssl_ciphers  HIGH:!aNULL:!MD5;</span>
+    <span class="token comment">#    ssl_prefer_server_ciphers  on;</span>
+
+    <span class="token comment">#    location / {</span>
+    <span class="token comment">#        root   html;</span>
+    <span class="token comment">#        index  index.html index.htm;</span>
+    <span class="token comment">#    }</span>
+    <span class="token comment">#}</span>
+    include servers/*<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div><!--[--><!--]--></div><footer class="page-meta"><!----><!----><!----></footer><!----><!--[--><!--]--></main><!--]--></div><!----><!--]--></div>
+    <script type="module" src="/2023/assets/app-8d1f7407.js" defer></script>
+  </body>
+</html>

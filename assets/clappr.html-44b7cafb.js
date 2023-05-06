@@ -1,0 +1,1 @@
+import{_ as a,p as r,q as t,R as e,t as c}from"./framework-5866ffd3.js";const s={},o=e("h3",{id:"clappr",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#clappr","aria-hidden":"true"},"#"),c(" Clappr")],-1),n=[o];function _(l,p){return r(),t("div",null,n)}const i=a(s,[["render",_],["__file","clappr.html.vue"]]);export{i as default};

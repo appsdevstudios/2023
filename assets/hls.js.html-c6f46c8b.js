@@ -1,0 +1,1 @@
+import{_ as s,p as t,q as a,R as e,t as c}from"./framework-5866ffd3.js";const r={},o=e("h3",{id:"hls-js",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#hls-js","aria-hidden":"true"},"#"),c(" Hls.js")],-1),_=[o];function n(l,h){return t(),a("div",null,_)}const i=s(r,[["render",n],["__file","hls.js.html.vue"]]);export{i as default};

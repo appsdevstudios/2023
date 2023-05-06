@@ -1,0 +1,1 @@
+import{_ as t,p as a,q as c,R as e,t as s}from"./framework-5866ffd3.js";const r={},o=e("h3",{id:"elastic",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#elastic","aria-hidden":"true"},"#"),s(" Elastic")],-1),i=[o];function n(_,l){return a(),c("div",null,i)}const h=t(r,[["render",n],["__file","elastic.html.vue"]]);export{h as default};

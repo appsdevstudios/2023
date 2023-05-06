@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-7d1ff42b","path":"/node/koa.js.html","title":"","lang":"en-US","frontmatter":{},"headers":[{"level":3,"title":"Koa.js","slug":"koa-js","link":"#koa-js","children":[]}],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"node/koa.js.md"}');export{e as data};

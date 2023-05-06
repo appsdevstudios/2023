@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-fed9396c","path":"/player/clappr.html","title":"","lang":"en-US","frontmatter":{},"headers":[{"level":3,"title":"Clappr","slug":"clappr","link":"#clappr","children":[]}],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"player/clappr.md"}');export{e as data};

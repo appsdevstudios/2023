@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-532f4ab8","path":"/player/cbplayer.html","title":"","lang":"en-US","frontmatter":{},"headers":[{"level":3,"title":"CBPlayer","slug":"cbplayer","link":"#cbplayer","children":[]}],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"player/cbplayer.md"}');export{e as data};

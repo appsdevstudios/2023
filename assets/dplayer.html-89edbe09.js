@@ -1,0 +1,1 @@
+import{_ as a,p as r,q as t,R as e,t as c}from"./framework-5866ffd3.js";const s={},d=e("h3",{id:"dplayer",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#dplayer","aria-hidden":"true"},"#"),c(" DPlayer")],-1),o=[d];function n(_,l){return r(),t("div",null,o)}const h=a(s,[["render",n],["__file","dplayer.html.vue"]]);export{h as default};

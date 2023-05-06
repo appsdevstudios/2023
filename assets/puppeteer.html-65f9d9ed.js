@@ -1,0 +1,1 @@
+import{_ as t,p as r,q as a,R as e,t as p}from"./framework-5866ffd3.js";const c={},s=e("h3",{id:"puppeteer",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#puppeteer","aria-hidden":"true"},"#"),p(" Puppeteer")],-1),o=[s];function n(_,d){return r(),a("div",null,o)}const u=t(c,[["render",n],["__file","puppeteer.html.vue"]]);export{u as default};

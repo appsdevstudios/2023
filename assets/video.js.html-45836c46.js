@@ -1,0 +1,1 @@
+import{_ as s,p as t,q as o,R as e,t as a}from"./framework-5866ffd3.js";const c={},d=e("h3",{id:"video-js",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#video-js","aria-hidden":"true"},"#"),a(" Video.js")],-1),r=[d];function _(i,n){return t(),o("div",null,r)}const l=s(c,[["render",_],["__file","video.js.html.vue"]]);export{l as default};

@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-0c8729de","path":"/webAssembly/webAssemblyStepByStep.html","title":"WebAssembly step-by-step","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"webAssembly/webAssemblyStepByStep.md"}');export{e as data};

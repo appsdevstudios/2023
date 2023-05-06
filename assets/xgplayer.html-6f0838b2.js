@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-e4bfc3d8","path":"/player/xgplayer.html","title":"","lang":"en-US","frontmatter":{},"headers":[{"level":3,"title":"XGPlayer","slug":"xgplayer","link":"#xgplayer","children":[]}],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"player/xgplayer.md"}');export{e as data};

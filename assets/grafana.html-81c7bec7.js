@@ -1,0 +1,1 @@
+import{_ as e,p as r,q as t,R as a,t as n}from"./framework-5866ffd3.js";const c={},s=a("h3",{id:"grafana",tabindex:"-1"},[a("a",{class:"header-anchor",href:"#grafana","aria-hidden":"true"},"#"),n(" Grafana")],-1),o=[s];function _(d,f){return r(),t("div",null,o)}const h=e(c,[["render",_],["__file","grafana.html.vue"]]);export{h as default};

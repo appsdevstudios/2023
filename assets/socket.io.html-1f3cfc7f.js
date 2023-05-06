@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-7a0aa80c","path":"/node/socket.io.html","title":"","lang":"en-US","frontmatter":{},"headers":[{"level":3,"title":"Socket.io","slug":"socket-io","link":"#socket-io","children":[]}],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"node/socket.io.md"}');export{e as data};

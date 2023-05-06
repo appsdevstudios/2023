@@ -1,0 +1,1 @@
+import{_ as r,p as t,q as a,R as e,t as c}from"./framework-5866ffd3.js";const s={},o=e("h3",{id:"plyr",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#plyr","aria-hidden":"true"},"#"),c(" Plyr")],-1),n=[o];function _(l,d){return t(),a("div",null,n)}const h=r(s,[["render",_],["__file","plyr.html.vue"]]);export{h as default};

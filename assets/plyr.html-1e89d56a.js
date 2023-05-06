@@ -1,0 +1,1 @@
+const l=JSON.parse('{"key":"v-81f3d9a2","path":"/player/plyr.html","title":"","lang":"en-US","frontmatter":{},"headers":[{"level":3,"title":"Plyr","slug":"plyr","link":"#plyr","children":[]}],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"player/plyr.md"}');export{l as data};

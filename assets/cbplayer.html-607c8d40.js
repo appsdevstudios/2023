@@ -1,0 +1,1 @@
+import{_ as a,p as r,q as t,R as e,t as c}from"./framework-5866ffd3.js";const s={},o=e("h3",{id:"cbplayer",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#cbplayer","aria-hidden":"true"},"#"),c(" CBPlayer")],-1),n=[o];function _(l,d){return r(),t("div",null,n)}const h=a(s,[["render",_],["__file","cbplayer.html.vue"]]);export{h as default};

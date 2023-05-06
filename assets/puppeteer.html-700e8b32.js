@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-6506e693","path":"/testing/puppeteer.html","title":"","lang":"en-US","frontmatter":{},"headers":[{"level":3,"title":"Puppeteer","slug":"puppeteer","link":"#puppeteer","children":[]}],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"testing/puppeteer.md"}');export{e as data};
